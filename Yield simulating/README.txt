@@ -11,3 +11,4 @@ Sub folders:
 
 3. qstrader
 - bonds_fund_portfolio_mss_1: main to run qstrader with cashflows_low
+- Can be imported through Numpy.
