@@ -35,4 +35,5 @@ In this file, we run the Hull-White model which provides the $a_n$ term correspo
 Creates the investment strategy and obtains the results of Table 5.
 
 
-If you want to run the **Yield\_Simulating/bonds\_fund\_portfolio\_mss\_1.py** file, you have to import the QSTrader package first. The download link and the details on this package can be found in https://github.com/mhallsmoore/qstrader.
+If you want to run the **Yield\_Simulating/bonds\_fund\_portfolio\_mss\_1.py** file, you first have to clone from: https://bitbucket.org/Dennis1802/fcs/src/Dennis/
+This contains an updated version of the QSTrader package. Details on the (old) package can be found in https://github.com/mhallsmoore/qstrader.
