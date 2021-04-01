@@ -587,7 +587,7 @@ figure(gcf);
 plot(time,xi_smooth_DNS(1,:),'SeriesIndex',1,'LineStyle', '-.', 'LineWidth', 2);hold on;
 plot(time,xi_smooth_MSL(1,:),'SeriesIndex',5,'LineStyle', '--', 'LineWidth', 2);hold on;
 plot(time,xi_smooth_MSS(1,:),'SeriesIndex',7, 'LineStyle', ':', 'LineWidth', 2);hold on;
-plot(time, empL_nom+ 1.6, 'k', 'LineWidth',1.5); hold on;
+plot(time, empL_nom, 'k', 'LineWidth',1.5); hold on;
 
 plot([min(xlim()),max(xlim())],[0,0], 'k--', 'LineWidth', 0.2);
 ax = gca; 
@@ -608,7 +608,7 @@ figure(gcf);
 plot(time,xi_smooth_DNS(2,:),'SeriesIndex',1,'LineStyle', '-.', 'LineWidth', 2);hold on;
 plot(time,xi_smooth_MSL(2,:),'SeriesIndex',5,'LineStyle', '--', 'LineWidth', 2);hold on;
 plot(time,xi_smooth_MSS(2,:),'SeriesIndex',7,'LineStyle', ':', 'LineWidth', 2);hold on;
-plot(time, empSlope-0.5, 'k', 'LineWidth',1.5); hold on;
+plot(time, empSlope, 'k', 'LineWidth',1.5); hold on;
 
 plot([min(xlim()),max(xlim())],[0,0], 'k--', 'LineWidth', 0.2);
 ax = gca; 
@@ -627,8 +627,8 @@ set(gcf,'units','points','position',[10,10,800,200])
 % Curvature:: 
 figure(gcf);
 plot(time,xi_smooth_DNS(3,:),'SeriesIndex',1,'LineStyle', '-.', 'LineWidth', 2);hold on;
-plot(time,xi_smooth_MSL(3,:)*0.5,'SeriesIndex',5,'LineStyle', '--', 'LineWidth', 2);hold on;
-plot(time,xi_smooth_MSS(3,:)*0.5,'SeriesIndex',7,'LineStyle', ':', 'LineWidth', 2);hold on;
+plot(time,xi_smooth_MSL(3,:),'SeriesIndex',5,'LineStyle', '--', 'LineWidth', 2);hold on;
+plot(time,xi_smooth_MSS(3,:),'SeriesIndex',7,'LineStyle', ':', 'LineWidth', 2);hold on;
 plot(time, empCurv, 'k', 'LineWidth',1); hold on;
 
 plot([min(xlim()),max(xlim())],[0,0], 'k--', 'LineWidth', 0.2);
@@ -648,7 +648,7 @@ figure(gcf);
 plot(time,xi_smooth_DNS(4,:),'SeriesIndex',1,'LineStyle', '-.', 'LineWidth', 2);hold on;
 plot(time,xi_smooth_MSL(4,:),'SeriesIndex',5,'LineStyle', '--', 'LineWidth', 2);hold on;
 plot(time,xi_smooth_MSS(4,:),'SeriesIndex',7,'LineStyle', ':', 'LineWidth', 2);hold on;
-plot(time, empL_inf+1.2, 'k', 'LineWidth',1); hold on;
+plot(time, empL_inf, 'k', 'LineWidth',1); hold on;
 plot([min(xlim()),max(xlim())],[0,0], 'k--', 'LineWidth', 0.2);
 ax = gca; 
 %txt1 = strcat("Ann. average return = ",annRet,"% ", annRetStd);
